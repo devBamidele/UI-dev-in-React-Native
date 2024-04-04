@@ -11,7 +11,7 @@ interface IconButtonProps {
   onPress?: ((event: GestureResponderEvent) => void) | null;
 }
 
-const IconButton: React.FC<IconButtonProps> = ({ icon, size = 20, onPress }) => {
+const IconButton: React.FC<IconButtonProps> = ({ icon, size = 22, onPress }) => {
   const handlePress = () => {
     if (onPress) {
       onPress.call;
@@ -31,7 +31,7 @@ const IconButton: React.FC<IconButtonProps> = ({ icon, size = 20, onPress }) => 
 
 const styles = StyleSheet.create({
   button: {
-    paddingHorizontal: 16,
+    paddingHorizontal: 18,
     paddingVertical: 12,
     marginHorizontal: 10,
     backgroundColor: Colors.inputBackground,

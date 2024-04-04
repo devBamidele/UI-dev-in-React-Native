@@ -15,14 +15,14 @@ function App() {
     <SafeAreaProvider style={{ backgroundColor: '#FFFFFF' }} >
       <NavigationContainer>
         <Stack.Navigator
-          screenOptions={{ 
+          screenOptions={{
             headerShown: false,
             contentStyle:{
               backgroundColor:'#FFFFFF'
             }
           }}
         >
-          {/* <Stack.Screen name='Welcome' component={WelcomeScreen} /> */}
+          <Stack.Screen name='Welcome' component={WelcomeScreen} />
           <Stack.Screen name='Login' component={LoginScreen} />
           <Stack.Screen name='Register' component={RegisterScreen} />
         </Stack.Navigator>    
